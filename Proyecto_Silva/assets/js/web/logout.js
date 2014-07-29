@@ -1,7 +1,7 @@
 function logout(){
   $.ajax({
     type: "POST",
-    url: '/bodas/web/login/logout',
+    url: '/Proyecto_Silva/web/login/logout',
     dataType: "json",
     success: function(data){
     	if(data==true){

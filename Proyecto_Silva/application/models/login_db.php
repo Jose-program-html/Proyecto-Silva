@@ -17,7 +17,7 @@ class login_db extends CI_Model {
 
         if ($opc == 2) {
             // armamos la consulta
-            $query = $this->db->query('SELECT email,password FROM usuarios WHERE email=? AND password=?', array($sEmail, $sPass));
+            $query = $this->db->query('SELECT correo,password FROM usuarios WHERE correo=? AND password=?', array($sEmail, $sPass));
         }
         if ($query->num_rows() == 0) {
             return true;
